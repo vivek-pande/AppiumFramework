@@ -1,0 +1,54 @@
+
+Appium Configuration:
+
+1-Download JAVA
+2-Download Android Studio
+3-Download NOde
+4-Set (java android SDK & Node )home path in window system variable
+5-open Android Studio and config Emulator
+6-install and start appium server via node
+7-create a new project in eclipse editor(org.apache.maven.archetype - quickstart)
+
+ADD Dependency form maven central repo:
+1-java Client
+2-TestNg(remove scope)
+3-Eclipse marketplace- testng for eclipse
+
+
+Appium:
+appium -v       -----> to check the appium version id less then 16 , please upgarde
+npm install -g appium@next     ------> to install appium latest version
+
+
+UAutomator2 :
+Ul Automator is a Ul testing framework Introduced by Google to faciitate automation on a Android device or emulator
+Applum leverages ths UlAutomator with its own wrapper and came up with UIAUTOMATOR2 Driver to automate the Android Apps.
+
+CMD- appium driver list (by default these driver are not provided by appium you need to install manually)
+	appium driver install UIAutomator2
+
+
+Appium Architecture | How Appium works?
+
+At the core, Appium is an HTTP server written in nodejs that exposes REST API. The client communicates with Appium server via REST API’s and it is handled by Mobile JSON Wire Protocol.
+The first step in this communication flow is the creation of the session. The client initiates the session by sending a request to the server consisting of session related information in key-value pairs, called as Desired Capabilities. On the basis of Desired Capabilities, Appium can differentiate between iOS and android platform and launch a session on target device/simulator/emulator. A session initiation is basically a POST /wd/hub/session request by client. Appium responds to this request in the form of a session id.
+Once the session is established, client and Appium server interacts with the session id as reference.
+
+Client libraries converts the user written commands to the REST API requests.
+These requests are sent to the Appium Server using Mobile JSON Wire Protocol.
+Appium server forward these requests to target android device/emulator.
+These commands are interpreted by bootstrap.jar which converts them into mobile understandable UIAutomator format.
+The UIAutomator commands are now performed on the device/emulator.
+Device/emulator then reverts the outcome of the performed command to the Appium server via bootstrap.jar.
+Appium server forwards this response to the client.
+
+What is Bootstrap.jar?
+Appium server interacts with Android devices through bootstrap.jar. When server starts an Android driver session, it pushes bootstrap.jar file to the device. Device executes this file using the device’s built-in uiautomator command. When bootstrap.jar is executed by the device, it starts a server that listens on the port 4724. This server listens for the requests that are coming from the Appium Server.
+
+On receiving the command, it converts them into UIAutomator commands, understandable by Android API 17 or higher. This UIAutomator then performs the desired action on the device.
+
+
+How to start & Stop Appium Server Programmatically using AppiumServiceBuilde
+
+C:Users/vivek/AppData/Roaming/npm/node_modules/appium/build/lib/main.js
+C:/Program Files/nodejs/node_modules/npm/node_modules/appium/build/lib/main.js
