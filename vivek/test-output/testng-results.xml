@@ -2,15 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-06T17:04:01 IST" name="Default suite" finished-at="2024-05-06T17:04:29 IST" duration-ms="27662">
+  <suite started-at="2024-05-16T14:42:26 IST" name="Default suite" finished-at="2024-05-16T14:42:37 IST" duration-ms="11661">
     <groups>
     </groups>
-    <test started-at="2024-05-06T17:04:01 IST" name="Default test" finished-at="2024-05-06T17:04:29 IST" duration-ms="27662">
+    <test started-at="2024-05-16T14:42:26 IST" name="Default test" finished-at="2024-05-16T14:42:37 IST" duration-ms="11661">
       <class name="basics.AppiumBasics">
-        <test-method signature="runAppium()[pri:0, instance:basics.AppiumBasics@409bf450]" started-at="2024-05-06T17:04:02 IST" name="runAppium" finished-at="2024-05-06T17:04:29 IST" duration-ms="27629" status="PASS">
+        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:basics.AppiumBasics@34e9fd99]" started-at="2024-05-16T14:42:26 IST" name="appiumConfig" finished-at="2024-05-16T14:42:32 IST" duration-ms="5747" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runAppium -->
+        </test-method> <!-- appiumConfig -->
+        <test-method signature="swipeTONext()[pri:0, instance:basics.AppiumBasics@34e9fd99]" started-at="2024-05-16T14:42:32 IST" name="swipeTONext" finished-at="2024-05-16T14:42:37 IST" duration-ms="5541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- swipeTONext -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:basics.AppiumBasics@34e9fd99]" started-at="2024-05-16T14:42:37 IST" name="tearDown" finished-at="2024-05-16T14:42:37 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- basics.AppiumBasics -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

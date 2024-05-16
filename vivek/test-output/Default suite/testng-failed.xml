@@ -5,7 +5,9 @@
     <classes>
       <class name="basics.AppiumBasics">
         <methods>
-          <include name="runAppium"/>
+          <include name="appiumConfig"/>
+          <include name="tearDown"/>
+          <include name="ScrollToElement"/>
         </methods>
       </class> <!-- basics.AppiumBasics -->
     </classes>
