@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basics.AppiumBasics">
+      <class name="practiceAPK.TestCases">
         <methods>
           <include name="appiumConfig"/>
+          <include name="openApplication"/>
           <include name="tearDown"/>
-          <include name="ScrollToElement"/>
         </methods>
-      </class> <!-- basics.AppiumBasics -->
+      </class> <!-- practiceAPK.TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

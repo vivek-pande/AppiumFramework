@@ -1,9 +1,10 @@
-package basics;
+package practiceAPK;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -19,8 +20,7 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-public class BaseTest {
-
+public class BaseClass {
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
 
@@ -34,7 +34,16 @@ public class BaseTest {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("emulator-5554");
-		options.setApp("D://AppiumFramework//vivek//src//test//java//resources//ApiDemos-debug.apk");
+		options.setApp("D:\\AppiumFramework\\vivek\\src\\test\\java\\resources\\General-Store.apk");
+//		options.setFullReset (true);
+//		options.setEventTimings (true);
+//		options.setNewCommandTimeout (Duration.ofSeconds (30));
+//		options.setAppWaitDuration (Duration.ofSeconds (30));
+//		options.setAndroidInstallTimeout (Duration.ofSeconds (30));
+		options.autoGrantPermissions ();
+
+
+
 
 		driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
 
@@ -77,4 +86,5 @@ public class BaseTest {
 			    "endY", endY
 			));
 	}
+
 }
