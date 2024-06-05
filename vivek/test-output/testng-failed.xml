@@ -5,8 +5,8 @@
     <classes>
       <class name="practiceAPK.TestCases">
         <methods>
+          <include name="addTOCart"/>
           <include name="appiumConfig"/>
-          <include name="openApplication"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- practiceAPK.TestCases -->

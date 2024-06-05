@@ -6,9 +6,12 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -23,6 +26,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public class BaseClass {
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
+	public WebDriverWait wait;
 
 	@BeforeClass
 	public void appiumConfig() throws MalformedURLException, URISyntaxException {
@@ -46,6 +50,10 @@ public class BaseClass {
 
 
 		driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
+		
+		 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated((By.id("com.androidsample.generalstore:id/toolbar_title"))));
 
 	}
 
