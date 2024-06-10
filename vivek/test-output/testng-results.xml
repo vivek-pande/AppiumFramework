@@ -1,25 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-05T11:04:44 IST" name="Default suite" finished-at="2024-06-05T11:05:29 IST" duration-ms="45360">
+  <suite started-at="2024-06-10T10:47:30 IST" name="Default suite" finished-at="2024-06-10T10:48:58 IST" duration-ms="87694">
     <groups>
     </groups>
-    <test started-at="2024-06-05T11:04:44 IST" name="Default test" finished-at="2024-06-05T11:05:29 IST" duration-ms="45360">
-      <class name="practiceAPK.TestCases">
-        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.TestCases@34e9fd99]" started-at="2024-06-05T11:04:44 IST" name="appiumConfig" finished-at="2024-06-05T11:04:52 IST" duration-ms="8690" status="PASS">
+    <test started-at="2024-06-10T10:47:30 IST" name="Default test" finished-at="2024-06-10T10:48:58 IST" duration-ms="87694">
+      <class name="practiceAPK.ProductPageTest">
+        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:47:30 IST" name="appiumConfig" finished-at="2024-06-10T10:47:49 IST" duration-ms="18535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appiumConfig -->
-        <test-method signature="addTOCart()[pri:0, instance:practiceAPK.TestCases@34e9fd99]" started-at="2024-06-05T11:04:52 IST" name="addTOCart" finished-at="2024-06-05T11:05:29 IST" duration-ms="36297" status="PASS">
+        <test-method signature="addTOCarts(java.util.HashMap)[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:47:49 IST" name="addTOCarts" data-provider="getDataFromjson" finished-at="2024-06-10T10:48:07 IST" duration-ms="18228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=vivek, country=Angola, product=Jordan 6 Rings, gender=male}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addTOCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceAPK.TestCases@34e9fd99]" started-at="2024-06-05T11:05:29 IST" name="tearDown" finished-at="2024-06-05T11:05:29 IST" duration-ms="338" status="PASS">
+        </test-method> <!-- addTOCarts -->
+        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:07 IST" name="appiumConfig" finished-at="2024-06-10T10:48:13 IST" duration-ms="5778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumConfig -->
+        <test-method signature="addTOCarts(java.util.HashMap)[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:13 IST" name="addTOCarts" data-provider="getDataFromjson" finished-at="2024-06-10T10:48:29 IST" duration-ms="16112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Somya, country=Argentina, product=Nike Blazer Mid '77, gender=female}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTOCarts -->
+        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:29 IST" name="appiumConfig" finished-at="2024-06-10T10:48:35 IST" duration-ms="5803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumConfig -->
+        <test-method signature="addTOCarts(java.util.HashMap)[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:35 IST" name="addTOCarts" data-provider="getDataFromjson" finished-at="2024-06-10T10:48:57 IST" duration-ms="22596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Rajat, country=Bhutan, product=Nike Blazer Mid '77, gender=male}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTOCarts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:57 IST" name="tearDown" finished-at="2024-06-10T10:48:58 IST" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- practiceAPK.TestCases -->
+      </class> <!-- practiceAPK.ProductPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

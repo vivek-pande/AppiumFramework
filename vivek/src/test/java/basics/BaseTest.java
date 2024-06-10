@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -24,7 +25,7 @@ public class BaseTest {
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
 
-	@BeforeClass
+	@BeforeMethod
 	public void appiumConfig() throws MalformedURLException, URISyntaxException {
 		service = new AppiumServiceBuilder()
 				.withAppiumJS(new File(
@@ -58,13 +59,13 @@ public class BaseTest {
 
 	}
 
-	public void scrollTOEnd() {
-		boolean canScrollMore;
-		do {
-			canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap
-					.of("left", 100, "top", 100, "width", 200, "height", 200, "direction", "down", "percent", 1.0));
-		} while (canScrollMore);
-	}
+//	public void scrollTOEnd() {
+//		boolean canScrollMore;
+//		do {
+//			canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap
+//					.of("left", 100, "top", 100, "width", 200, "height", 200, "direction", "down", "percent", 1.0));
+//		} while (canScrollMore);
+//	}
 
 	public void swipe(WebElement ele) {
 		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture",

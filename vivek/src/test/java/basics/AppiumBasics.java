@@ -72,13 +72,13 @@ public class AppiumBasics extends BaseTest {
 
 	}
 
-	@Test
-	public void ScrollTillEnd() throws InterruptedException {
-		driver.findElement(AppiumBy.accessibilityId("Views")).click();
-		scrollTOEnd();
-		Thread.sleep(2000);
 
-	}
+//	public void ScrollTillEnd() throws InterruptedException {
+//		driver.findElement(AppiumBy.accessibilityId("Views")).click();
+//		scrollTOEnd();
+//		Thread.sleep(2000);
+//
+//	}
 
 	@Test
 	public void swipeTONext() {
