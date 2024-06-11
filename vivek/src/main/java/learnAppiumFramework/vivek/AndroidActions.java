@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
@@ -16,10 +17,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
 public class AndroidActions {
-	AndroidDriver driver;
+	public AppiumDriver driver;
 
 	public AndroidActions(AndroidDriver driver) {
 		this.driver = driver;
@@ -62,5 +64,7 @@ public class AndroidActions {
 		((JavascriptExecutor) driver).executeScript("mobile: dragGesture",
 				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "endX", endX, "endY", endY));
 	}
+	
+	
 
 }

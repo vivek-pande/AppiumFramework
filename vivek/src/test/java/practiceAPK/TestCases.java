@@ -1,5 +1,6 @@
 package practiceAPK;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
@@ -11,9 +12,51 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+import learnAppiumFramework.vivek.android.ProductPage;
+import learnAppiumFramework.vivek.android.homePage;
+
 public class TestCases extends BaseClass {
+	
+	ExtentReports extent;
+	@BeforeTest
+	public void config() {
+		// EntentReport ExtentSparkreporter
+		
+		String path = System.getProperty("user.dir")+"//reports//index.html";
+		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+		reporter.config().setReportName("appium Report");
+		reporter.config().setDocumentTitle("General Store app test result");
+		
+		 extent = new ExtentReports();
+		extent.attachReporter(reporter);
+		extent.setSystemInfo("tester", "vivek pandey");
+	}
+	@Test(dataProvider = "getData")
+	public void addTOCart(String country, String name, String gender, String productName) throws InterruptedException {
+
+		extent.createTest("initial Demo");
+		homePage home = new homePage(driver);
+		home.formFill(country, name, gender);
+//		String productName = "Jordan 6 Rings";
+		ProductPage pp = new ProductPage(driver);
+		pp.searchproduct(productName);
+		pp.addtocart(productName);
+		pp.validateCartItems(productName);
+		extent.flush();
+
+	}
+	@DataProvider
+	public Object[][] getData() throws IOException {
+		return new Object[][] { { "Angola", "vivek", "male,", "Jordan 6 Rings" },
+				{ "Argentina", "somya", "female", "Nike Blazer Mid '77" } };
+	}
 
 	@Test
 	public void verifyheaders() throws InterruptedException {

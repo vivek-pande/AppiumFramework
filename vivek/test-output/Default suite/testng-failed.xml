@@ -5,7 +5,7 @@
     <classes>
       <class name="practiceAPK.ProductPageTest">
         <methods>
-          <include name="addTOCarts" invocation-numbers="2"/>
+          <include name="addTOCart"/>
           <include name="appiumConfig"/>
           <include name="tearDown"/>
         </methods>

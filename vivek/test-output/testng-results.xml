@@ -1,62 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-10T10:47:30 IST" name="Default suite" finished-at="2024-06-10T10:48:58 IST" duration-ms="87694">
+  <suite started-at="2024-06-12T00:00:14 IST" name="Suite" finished-at="2024-06-12T00:01:45 IST" duration-ms="90591">
     <groups>
     </groups>
-    <test started-at="2024-06-10T10:47:30 IST" name="Default test" finished-at="2024-06-10T10:48:58 IST" duration-ms="87694">
-      <class name="practiceAPK.ProductPageTest">
-        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:47:30 IST" name="appiumConfig" finished-at="2024-06-10T10:47:49 IST" duration-ms="18535" status="PASS">
+    <test started-at="2024-06-12T00:00:14 IST" name="cart app test" finished-at="2024-06-12T00:01:45 IST" duration-ms="90591">
+      <class name="practiceAPK.homePageTest">
+        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:00:14 IST" name="appiumConfig" finished-at="2024-06-12T00:00:34 IST" duration-ms="19934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appiumConfig -->
-        <test-method signature="addTOCarts(java.util.HashMap)[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:47:49 IST" name="addTOCarts" data-provider="getDataFromjson" finished-at="2024-06-10T10:48:07 IST" duration-ms="18228" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=vivek, country=Angola, product=Jordan 6 Rings, gender=male}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyheaders()[pri:1, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:00:34 IST" name="verifyheaders" finished-at="2024-06-12T00:00:39 IST" duration-ms="4993" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addTOCarts -->
-        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:07 IST" name="appiumConfig" finished-at="2024-06-10T10:48:13 IST" duration-ms="5778" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appiumConfig -->
-        <test-method signature="addTOCarts(java.util.HashMap)[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:13 IST" name="addTOCarts" data-provider="getDataFromjson" finished-at="2024-06-10T10:48:29 IST" duration-ms="16112" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=Somya, country=Argentina, product=Nike Blazer Mid '77, gender=female}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addTOCarts -->
-        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:29 IST" name="appiumConfig" finished-at="2024-06-10T10:48:35 IST" duration-ms="5803" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appiumConfig -->
-        <test-method signature="addTOCarts(java.util.HashMap)[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:35 IST" name="addTOCarts" data-provider="getDataFromjson" finished-at="2024-06-10T10:48:57 IST" duration-ms="22596" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=Rajat, country=Bhutan, product=Nike Blazer Mid '77, gender=male}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addTOCarts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceAPK.ProductPageTest@62379589]" started-at="2024-06-10T10:48:57 IST" name="tearDown" finished-at="2024-06-10T10:48:58 IST" duration-ms="417" status="PASS">
+        </test-method> <!-- verifyheaders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:00:39 IST" name="tearDown" finished-at="2024-06-12T00:00:39 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- practiceAPK.ProductPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:00:39 IST" name="appiumConfig" finished-at="2024-06-12T00:00:59 IST" duration-ms="19272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumConfig -->
+        <test-method signature="validateFormFill()[pri:2, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:00:59 IST" name="validateFormFill" finished-at="2024-06-12T00:01:15 IST" duration-ms="16421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFormFill -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:01:15 IST" name="tearDown" finished-at="2024-06-12T00:01:16 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="appiumConfig()[pri:0, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:01:16 IST" name="appiumConfig" finished-at="2024-06-12T00:01:38 IST" duration-ms="22625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumConfig -->
+        <test-method signature="validateToast()[pri:3, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:01:38 IST" name="validateToast" finished-at="2024-06-12T00:01:43 IST" duration-ms="5310" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter your nam] but found [Please enter your name]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter your nam] but found [Please enter your name]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at learnAppiumFramework.vivek.android.homePage.validateToastMessage(homePage.java:86)
+at practiceAPK.homePageTest.validateToast(homePageTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateToast -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceAPK.homePageTest@660acfb]" started-at="2024-06-12T00:01:44 IST" name="tearDown" finished-at="2024-06-12T00:01:45 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- practiceAPK.homePageTest -->
+    </test> <!-- cart app test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -82,7 +82,7 @@ public class homePage extends AndroidActions {
 	public void validateToastMessage() {
 		btnLetsShop.click();
 		String toastErrorMessage = toastMessage.getAttribute("text");
-		String ActualToastErrorMessage = "Please enter your name";
+		String ActualToastErrorMessage = "Please enter your nam";
 		Assert.assertEquals(toastErrorMessage, ActualToastErrorMessage);
 
 	}
