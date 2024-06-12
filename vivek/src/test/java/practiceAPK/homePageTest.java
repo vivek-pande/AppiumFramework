@@ -7,7 +7,7 @@ import learnAppiumFramework.vivek.android.homePage;
 
 public class homePageTest extends BaseClass {
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups = {"Smoke"})
 	public void verifyheaders() throws InterruptedException {
 
 		homePage home = new homePage(driver);
@@ -16,7 +16,7 @@ public class homePageTest extends BaseClass {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,groups = {"Smoke"})
 	public void validateFormFill() throws InterruptedException {
 
 		homePage home = new homePage(driver);
@@ -24,7 +24,7 @@ public class homePageTest extends BaseClass {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,groups = {"Smoke"})
 	public void validateToast() {
 
 		homePage home = new homePage(driver);

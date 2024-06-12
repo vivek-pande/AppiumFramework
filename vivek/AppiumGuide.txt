@@ -52,3 +52,8 @@ How to start & Stop Appium Server Programmatically using AppiumServiceBuilde
 
 C:Users/vivek/AppData/Roaming/npm/node_modules/appium/build/lib/main.js
 C:/Program Files/nodejs/node_modules/npm/node_modules/appium/build/lib/main.js
+
+
+jenkins run code:
+
+<!-- jenkins start command   : java -jar jenkins.war -httpPort=8080 --enable-future-java -->

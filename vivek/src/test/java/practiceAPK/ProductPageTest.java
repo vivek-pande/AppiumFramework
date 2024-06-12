@@ -24,7 +24,7 @@ import learnAppiumFramework.vivek.android.homePage;
 
 public class ProductPageTest extends BaseClass {
 
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData", groups = {"Smoke"})
 	public void addTOCart(String country, String name, String gender, String productName) throws InterruptedException {
 
 		homePage home = new homePage(driver);

@@ -44,7 +44,7 @@ public class BaseClass {
 	public AppiumDriverLocalService service;
 	public WebDriverWait wait;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void appiumConfig() throws URISyntaxException, IOException {
 
 		Properties prop = new Properties();
@@ -52,7 +52,7 @@ public class BaseClass {
 				System.getProperty("user.dir") + "\\src\\test\\java\\resources\\data.properties");
 
 		prop.load(fis);
-		String ipAddress = prop.getProperty("ip");
+		String ipAddress = System.getProperty("ip") != null ? System.getProperty("ip") : prop.getProperty("ip");
 		int port = Integer.parseInt(prop.getProperty("port"));
 		String device_name = prop.getProperty("device_name");
 
@@ -87,7 +87,7 @@ public class BaseClass {
 //		  driver.activateApp("com.androidsample.generalstore");	
 //	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 		service.stop();
