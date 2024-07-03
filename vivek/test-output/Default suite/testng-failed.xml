@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practiceAPK.ProductPageTest">
+      <class name="practiceAPK.homePageTest">
         <methods>
-          <include name="addTOCart"/>
           <include name="appiumConfig"/>
+          <include name="validateToast"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- practiceAPK.ProductPageTest -->
+      </class> <!-- practiceAPK.homePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extentReport.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Home_Page test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="practiceAPK.homePageTest">
+        <methods>
+          <include name="validateFormFill"/>
+          <include name="verifyheaders"/>
+          <include name="appiumConfig"/>
+          <include name="validateToast"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- practiceAPK.homePageTest -->
+    </classes>
+  </test> <!-- Home_Page test(failed) -->
+</suite> <!-- Failed suite [Smoke] -->

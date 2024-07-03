@@ -18,13 +18,14 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.google.common.collect.ImmutableMap;
 
+import extentReport.MyRetry;
 import io.appium.java_client.android.Activity;
 import learnAppiumFramework.vivek.android.ProductPage;
 import learnAppiumFramework.vivek.android.homePage;
 
 public class ProductPageTest extends BaseClass {
 
-	@Test(dataProvider = "getData", groups = {"Smoke"})
+	@Test(dataProvider = "getData", groups = {"Smoke"},retryAnalyzer = MyRetry.class)
 	public void addTOCart(String country, String name, String gender, String productName) throws InterruptedException {
 
 		homePage home = new homePage(driver);
@@ -36,7 +37,7 @@ public class ProductPageTest extends BaseClass {
 
 	}
 
-	@Test(dataProvider = "getDataFromjson")
+	@Test(dataProvider = "getDataFromjson",retryAnalyzer = MyRetry.class)
 	public void addTOCarts(HashMap<String, String> input) throws InterruptedException {
 
 		homePage home = new homePage(driver);
